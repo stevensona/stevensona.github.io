@@ -1,74 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'> 
-  <link href='https://cdn.rawgit.com/dhg/Skeleton/master/css/skeleton.css' rel='stylesheet' type='text/css'>
-  <link href='https://cdn.rawgit.com/dhg/Skeleton/master/css/normalize.css' rel='stylesheet' type='text/css'>
-  <script src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Adam Stevenson</title>
-  <style type="text/css">
-    body {
-      margin:40px auto;
-      max-width:650px;
-      line-height:1.6;
-      font-size:18px;
-      font-family: 'Raleway', sans-serif;
-      color:#555;
-      padding:0 10px;
-      background-color: #f6f6f6 }
-    h1,h2,h3 {
-      line-height:1.2 }
-    header {
-      text-align:center
-    }
-    header h1 {
-      font-size: 4em;
-      font-weight: normal }
-    #links {
-      text-align: center;
-      width: 100% }
-    #links ul {
-      padding: 0px;
-      list-style-type: none;
-      display: inline-table }
-    #links ul li {
-      display: inline }
-    #links ul li a{
-      text-decoration: none }
-    #links ul li a svg{
-      height: 3rem;
-      width: 3rem }
-    #linkedin {fill: #0077B5}
-    #github {fill: #181717}
-    #email {fill: #808080}
-  </style>
+  <meta name="description" content="Adam Stevenson, software developer portfolio and contact information">
+  <meta name="author" content="Adam Stevenson">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="raleway.css" rel="stylesheet" type="text/css"> 
+  
+  <link href="normalize.css" rel="stylesheet" type="text/css">
+  <link href="skeleton.css" rel="stylesheet" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  
+
+  
 </head>
 <body>
-  <header>
-    <h1>adam stevenson</h1>
-    <aside>software developer</aside>
-  </header>
-  
-  <section id="description">
-  <p></p>
-  </section>
 
-  <section id="links">
-    <ul>
-      <li id="github">
-        <a title="GitHub" href="https://github.com/stevensona/">
-          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8"/></svg>
-        </a>
-      <li id="linkedin">
-        <a title="LinkedIn" href="https://www.linkedin.com/in/adamstevenson121">
-          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51V7.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero"/></svg>
-        </a>
-      <li id="email">
-        <a title="Email" href="#">
-          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M15.244 7.386c-.023.607-.112 1.204-.266 1.79-.155.587-.387 1.11-.696 1.572-.31.46-.703.833-1.18 1.117-.48.283-1.053.425-1.723.425-.47 0-.885-.102-1.246-.305-.36-.203-.64-.49-.842-.863-.56.756-1.314 1.134-2.258 1.134-.413 0-.788-.092-1.126-.275-.337-.183-.62-.444-.845-.785-.227-.34-.39-.75-.49-1.228-.1-.478-.122-1.012-.064-1.602.084-.72.248-1.376.488-1.962.24-.587.54-1.088.902-1.503.36-.415.774-.735 1.24-.958.468-.223.97-.335 1.508-.335.344 0 .644.026.902.077.258.052.49.122.7.21.21.09.402.19.58.306.177.114.355.232.532.352l-.438 5.04c-.03.242-.024.438.013.59.037.15.097.273.18.364.083.092.18.155.292.19.11.034.224.05.34.05.245 0 .474-.084.686-.252.21-.17.395-.403.55-.7.154-.298.277-.65.37-1.052.09-.404.145-.84.162-1.31.046-.893-.023-1.71-.206-2.448-.184-.738-.486-1.37-.906-1.894-.42-.523-.962-.93-1.624-1.22-.66-.288-1.45-.433-2.366-.433-.87 0-1.65.17-2.34.51-.69.342-1.283.813-1.778 1.414-.495.602-.883 1.31-1.164 2.127-.28.815-.443 1.7-.49 2.65-.045 1.03.038 1.93.25 2.704.212.774.54 1.42.988 1.938.446.518 1.004.906 1.674 1.164.67.257 1.44.386 2.31.386.247 0 .5-.014.756-.043.258-.028.51-.068.76-.12.25-.05.487-.11.713-.176.226-.067.43-.14.614-.22l.317 1.426c-.2.13-.43.244-.687.34-.258.093-.528.172-.812.235-.283.064-.57.11-.863.143-.292.03-.57.047-.833.047-1.162 0-2.193-.166-3.092-.498-.898-.332-1.65-.826-2.254-1.482-.604-.655-1.055-1.47-1.353-2.447-.297-.976-.423-2.11-.378-3.397.052-1.174.268-2.26.65-3.26.38-.998.902-1.86 1.566-2.59C3.636 1.6 4.43 1.032 5.356.62 6.28.206 7.31 0 8.45 0c1.134 0 2.133.18 2.998.537.864.358 1.586.86 2.164 1.51.578.65 1.006 1.428 1.284 2.333.278.905.394 1.907.348 3.006zm-8.588.98c-.063.743-.005 1.306.176 1.687.18.38.47.57.87.57.087 0 .186-.018.298-.055.11-.037.226-.106.343-.206.118-.1.234-.24.348-.42.116-.18.222-.418.32-.71l.342-3.916c-.17-.046-.35-.07-.532-.07-.344 0-.638.07-.885.203-.246.134-.455.333-.627.596-.17.264-.31.59-.416.98-.106.39-.185.835-.236 1.34z" fill-rule="nonzero"/></svg>
-        </a>
-    </ul>
-  </section>
-<br>
+  <div class="section heading">
+    <div class="container">
+      <h1>adam stevenson</h1>
+    </div>
+  </div>
+  
+  <div class="section body">
+    <div class="container">
+      <nav class="navbar">
+        <ul>
+        <li><a class="tab" href="#overview">overview</a>
+        <li><a class="tab" href="#projects">projects</a>
+        <li><a class="tab" href="#contact">contact</a>
+        </ul>
+      </nav>
+      <div class="row panel active" id="overview">
+        <div class="twelve column"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+      </div>
+      <div class="row panel" id="projects">
+        <div class="twelve column"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+      </div>
+      <div class="row panel" id="contact">
+        <div class="twelve column"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section links">
+    <div class="container">
+      <div class="row">
+        <ul>
+          <li id="github">
+            <a title="GitHub" href="https://github.com/stevensona/">
+              <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8"/></svg>
+            </a>
+          <li id="linkedin">
+            <a title="LinkedIn" href="https://www.linkedin.com/in/adamstevenson121">
+              <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51V7.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero"/></svg>
+            </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="jquery.min.js"></script>
+  <script>
+    $(".tab").on("click", function() {
+      var id = $(this).attr('href').slice(1);
+      $(".active").fadeOut(150, function() {
+        $(".active").removeClass("active");
+        $("#" + id).addClass("active");
+        $(".active").fadeIn(150);
+      });
+    });
+  </script>
+
+</body>
+
