@@ -8,15 +8,15 @@
   <meta name="author" content="Adam Stevenson">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link href="raleway.css" rel="stylesheet" type="text/css"> 
-  
+
+  <link href="raleway.css" rel="stylesheet" type="text/css">
+
   <link href="normalize.css" rel="stylesheet" type="text/css">
   <link href="skeleton.css" rel="stylesheet" type="text/css">
   <link href="style.css" rel="stylesheet" type="text/css">
-  
 
-  
+
+
 </head>
 <body>
 
@@ -25,17 +25,17 @@
       <h1>adam stevenson</h1>
     </div>
   </div>
-  
+
   <div class="section body">
     <div class="container">
       <nav class="navbar">
         <ul>
-        <li><a class="tab" href="#overview">overview</a>
+        <li><a class="tab active" href="#about">about</a>
         <li><a class="tab" href="#projects">projects</a>
         <li><a class="tab" href="#contact">contact</a>
         </ul>
       </nav>
-      <div class="row panel active" id="overview">
+      <div class="row panel active" id="about">
         <div class="twelve column"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
       </div>
       <div class="row panel" id="projects">
@@ -68,13 +68,13 @@
   <script>
     $(".tab").on("click", function() {
       var id = $(this).attr('href');
-      $(".active").fadeOut(150, function() {
+      $(".panel.active").fadeOut(150, function() {
         $(".active").removeClass("active");
         $(id).addClass("active");
-        $(".active").fadeIn(150);
+        $("a[href$='" + id + "']").addClass("active");
+        $(".panel.active").fadeIn(150);
       });
     });
   </script>
 
 </body>
-
