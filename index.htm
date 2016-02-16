@@ -67,10 +67,10 @@
   <script src="jquery.min.js"></script>
   <script>
     $(".tab").on("click", function() {
-      var id = $(this).attr('href').slice(1);
+      var id = $(this).attr('href');
       $(".active").fadeOut(150, function() {
         $(".active").removeClass("active");
-        $("#" + id).addClass("active");
+        $(id).addClass("active");
         $(".active").fadeIn(150);
       });
     });
