@@ -1,0 +1,58 @@
+.section {
+  padding: 0 0 5rem;
+  text-align: center;
+}
+.section.heading {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  margin-bottom: 0;
+}
+.section.heading h1 {
+  margin-bottom: 0;
+}
+.navbar {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.navbar ul{
+  list-style: none;
+  margin-bottom: 0;
+}
+.navbar li {
+  display: inline;
+}
+.navbar li a{
+  margin-right: 35px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #222;
+  letter-spacing: 0.2rem;
+  line-height: 5rem;
+}
+.navbar li a:hover{
+  color: #f77;
+}
+.panel {
+  /*border: 1px solid #E1E1E1;
+  border-radius: 4px;*/
+  padding: 1.5rem;
+}
+.panel p {
+  margin-bottom: 0
+}
+#projects, #contact {
+  display: none;
+}
+.links ul {
+  padding: 0px;
+  list-style: none;
+  }
+.links li {
+  display: inline }
+.links li a{
+  text-decoration: none }
+.links svg{
+  height: 4rem;
+  width: 4rem }
+#linkedin {fill: #0077B5}
+#github {fill: #181717}
