@@ -24,7 +24,8 @@
 .navbar li .active {
   font-weight: bold; }
 .navbar li a{
-  margin-right: 35px;
+  margin-left: 17px;
+  margin-right: 17px;
   text-transform: uppercase;
   text-decoration: none;
   color: #222;
