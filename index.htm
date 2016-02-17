@@ -42,19 +42,19 @@
         <div class="twelve column"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
       </div>
       <div class="row panel" id="contact">
-        <form>
+        <form method="post">
           <div class="row">
             <div class="six columns">
               <label for="contact-email">Your email</label>
-              <input class="u-full-width" id="contact-email" type="email">
+              <input class="u-full-width" id="contact-email" type="email" name="email">
             </div>
             <div class="six columns">
               <label for="contact-subject">Subject</label>
-              <input class="u-full-width" id="contact-subject" type="text">
+              <input class="u-full-width" id="contact-subject" type="text" name="subject">
             </div>
           </div>
           <label for="contact-message">Message</label>
-          <textarea class="u-full-width" placeholder="Hi Adam" id="contact-message"></textarea>
+          <textarea class="u-full-width" placeholder="Hi Adam" id="contact-message" name="message"></textarea>
           <input class="button-primary" value="Submit" type="submit">
         </form>
       </div>
