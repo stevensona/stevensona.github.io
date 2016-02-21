@@ -57,14 +57,13 @@
   /*border: 1px #EEE solid;
   border-radius: 3px;*/
   padding: 5px;
-  min-height: 4em;
   background-color: #FFF;
   margin-bottom: 10px;
   transition: background-color 0.25s;
 }
-.project:hover{
-  background-color: #EEE;
-}
+/*.project:hover{
+  background-color: #F5F5F5;
+}*/
 
 .project-title {
   font-weight: bold;
