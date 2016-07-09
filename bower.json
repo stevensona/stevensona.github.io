@@ -1,0 +1,30 @@
+{
+  "name": "stevensona.github.io",
+  "homepage": "http://adamstevenson.me/",
+  "authors": [
+    "Adam Stevenson <adamstevenson121@gmail.com>"
+  ],
+  "description": "personal portfolio",
+  "main": "index.htm",
+  "keywords": [
+    "portfolio",
+    "adam",
+    "stevenson",
+    "fullstack"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vue": "^1.0.26",
+    "uikit": "^2.26.3",
+    "skeleton": "^2.0.4",
+    "vue-router": "^0.7.13"
+  }
+}

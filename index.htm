@@ -7,11 +7,11 @@
   <meta name="author" content="Adam Stevenson">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link href="normalize.css" rel="stylesheet" type="text/css">
-  <link href="skeleton.css" rel="stylesheet" type="text/css">
+  <link href="bower_components/skeleton/css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="bower_components/skeleton/css/skeleton.css" rel="stylesheet" type="text/css">
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body >
 
   <div class="section heading">
     <div class="container">
@@ -19,73 +19,18 @@
     </div>
   </div>
 
-  <div class="section body">
+  <div class="section body" id="app">
     <div class="container">
       <nav class="navbar">
         <ul>
-        <li><a class="tab active" href="#about">about</a>
-        <li><a class="tab" href="#projects">projects</a>
-        <li><a class="tab" href="#contact">contact</a>
+        <li><a class="tab active" v-link="{path: '/about'}">about</a>
+        <li><a class="tab" v-link="{path: '/projects'}">projects</a>
+        <li><a class="tab" v-link="{path: '/contact'}">contact</a>
         </ul>
       </nav>
-      <div class="row panel active" id="about">
-        <div class="twelve column">
-          <p>Hi. I'm a full stack developer. I care about code correctness, efficiency, testability, and maintainability. I have experience developing software for desktop (every major OS), web (full stack), and mobile (Android). In addition to open source contributions, I regularly write and refactor code for personal projects in  C++, Ruby, and Java.</p>
-        </div>
-      </div>
-      <div class="row panel" id="projects">
-        <div class="twelve column">
-          <div class="project-list">
-            <div class="project">
-              <span class="project-title"><a href="https://briskforms.com/">Brisk Forms</a></span>
-              <span class="project-desc">
-                Fast, free, and secure HTML form submission service for static sites implemented in <a href="http://rubyonrails.org/">Ruby on Rails</a>.
-              </span>
-            </div>
-            <div class="project">
-              <span class="project-title"><a href="http://typemismat.ch/">Type Mismatch</a></span>
-              <span class="project-desc">
-                A virtual grab bag of programming tricks and tutorials powered by <a href="https://ghost.org/">Ghost</a>.
-              </span>
-            </div>
-            <div class="project">
-              <span class="project-title"><a href="https://github.com/stevensona/chip8">Chip8 Emulator</a></span>
-              <span class="project-desc">
-                The classic CHIP8 virtual machine implemented in modern C++ with <a href="https://www.libsdl.org/index.php">SDL2</a>.
-              </span>
-            </div>
-            <div class="project">
-              <span class="project-title"><a href="https://github.com/wildswine/noahsark">Noah's Ark</a></span>
-              <span class="project-desc">
-                Desktop/Mobile tile-matching game with a twist implemented in Java with <a href="https://libgdx.badlogicgames.com/">libgdx</a>.
-              </span>
-            </div>
-            <div class="project">
-              <span class="project-title"><a href="https://github.com/stevensona/halfwit">Halfwit</a></span>
-              <span class="project-desc">
-                Console-based IRC client with no message-sending capabilities written in C++ using <a href="http://www.boost.org/">Boost</a>.
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row panel" id="contact">
-        <form method="post" action="https://www.briskforms.com/go/f6fd2e8654a89a0971810c58e35440a6">
-          <div class="row">
-            <div class="six columns">
-              <label for="contact-email">Your email</label>
-              <input class="u-full-width" id="contact-email" type="email" name="email">
-            </div>
-            <div class="six columns">
-              <label for="contact-subject">Subject</label>
-              <input class="u-full-width" id="contact-subject" type="text" name="subject">
-            </div>
-          </div>
-          <label for="contact-message">Message</label>
-          <textarea class="u-full-width" placeholder="Hi Adam" id="contact-message" name="message"></textarea>
-          <input class="button-primary" value="Submit" type="submit">
-        </form>
-      </div>
+
+      <router-view></router-view>
+
     </div>
   </div>
 
@@ -106,18 +51,11 @@
     </div>
   </div>
 
-  <script src="jquery.min.js"></script>
-  <script>
-    $(".tab").on("click", function() {
-      var id = $(this).attr('href');
-      $(".panel.active").fadeOut(150, function() {
-        $(".active").removeClass("active");
-        $(id).addClass("active");
-        $("a[href$='" + id + "']").addClass("active");
-        $(".panel.active").fadeIn(150);
-      });
-    });
-  </script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/vue/dist/vue.min.js"></script>
+  <script src="bower_components/vue-router/dist/vue-router.min.js"></script>
+  <script src="site.js"></script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
