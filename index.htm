@@ -12,28 +12,23 @@
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body >
-
   <div class="section heading">
     <div class="container">
       <h1>adam stevenson</h1>
     </div>
   </div>
-
   <div class="section body" id="app">
     <div class="container">
       <nav class="navbar">
         <ul>
-        <li><a class="tab active" v-link="{path: '/about'}">about</a>
+        <li><a class="tab" v-link="{path: '/'}">about</a>
         <li><a class="tab" v-link="{path: '/projects'}">projects</a>
         <li><a class="tab" v-link="{path: '/contact'}">contact</a>
         </ul>
       </nav>
-
       <router-view></router-view>
-
     </div>
   </div>
-
   <div class="section links">
     <div class="container">
       <div class="row">

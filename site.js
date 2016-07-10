@@ -65,7 +65,6 @@ var app = Vue.extend({});
 var router = new VueRouter();
 router.map({
     '/': { component: about },
-    '/about': { component: about },
     '/projects': { component: projects },
     '/contact': { component: contact },
 })
