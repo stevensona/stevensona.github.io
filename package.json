@@ -1,0 +1,22 @@
+{
+  "name": "stevensona.github.io",
+  "version": "1.0.0",
+  "description": "personal portfolio",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevensona/stevensona.github.io.git"
+  },
+  "author": "adam stevenson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevensona/stevensona.github.io/issues"
+  },
+  "homepage": "https://github.com/stevensona/stevensona.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
