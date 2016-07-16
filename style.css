@@ -40,8 +40,6 @@ body {
   color: #f77;
 }
 .panel {
-  /*border: 1px solid #E1E1E1;
-  border-radius: 4px;*/
   padding: 1.5rem;
 }
 .panel p {
@@ -49,21 +47,17 @@ body {
 }
 
 .project-list {
-  /*padding: 5px;*/
+
   text-align: left;
 }
 
 .project {  
-  /*border: 1px #EEE solid;
-  border-radius: 3px;*/
+
   padding: 5px;
   background-color: #FFF;
   margin-bottom: 10px;
-  transition: background-color 0.25s;
+
 }
-/*.project:hover{
-  background-color: #F5F5F5;
-}*/
 
 .project-title {
   font-weight: bold;
