@@ -1,7 +1,7 @@
 var about = Vue.extend({
     data: function() {
         return {
-            summary: "Hi. I'm a full stack developer. I care about code correctness, efficiency, testability, and maintainability. I have experience developing software for desktop (every major OS), web (full stack), and mobile (Android). In addition to open source contributions, I regularly write and refactor code for personal projects in  C++, C#, Ruby, and Java."
+            summary: "Hi. I'm a full stack developer. I care about code correctness, efficiency, testability, and maintainability. I have experience developing software for desktop (every major OS), web (full stack), and mobile (Android). In addition to open source contributions, I regularly write and refactor code for personal projects in  C++, C#, Ruby, and Java. I love building stuff."
         };
     },
     template: `
