@@ -17,7 +17,7 @@ var projects = Vue.extend({
         return {
             projects: [
                 {title: 'Brisk Forms', url: 'https://briskforms.com/', desc: 'a Ruby on Rails web app for securely handling HTML form submissions from static sites.'},
-                {title: 'VSCode Shader Toy', url: 'https://github.com/stevensona/shader-toy', desc: 'Visual Studio Code extension that provides a live preview of a GLSL shader program.'},
+                {title: 'VSCode Shader Toy', url: 'http://adamstevenson.me/shader-toy/', desc: 'Visual Studio Code extension that provides a live preview of a GLSL shader program.'},
                 
                 {title: 'Chip8 Emulator', url: 'https://github.com/stevensona/chip8', desc: 'The classic CHIP8 virtual machine implemented in modern C++ with <a href="https://www.libsdl.org/index.php">SDL2</a>.'},
                 {title: 'clubcast', url: 'http://clubcast.xyz/', desc: 'a podcast aggregator written in C++ and presented with Javascript.'},
